@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Degrade em CSS</title>
+    
+    <style>        
+        *{
+            height: 100%;
+        }
+            /* "*" define as configurações globais das CSS*/
+
+        body{
+            background-image: linear-gradient(45deg, #A63F03, #D97904, #F2AE30, #D9D7B8);
+            /*
+                propriedade 'background-image'
+                função interna 'linear-gradien' 
+                    1 - define a direção (to right, to left, to top, to bottom)  ou em graus (90deg, -90deg, 45deg, -45deg,...) 
+                    ou 
+                    usa a função interna 'radial-gradien' (circle)
+                    2 - define quantas cores desejar
+                    obs.: pode definir a porcentagem que cada cor ocupa a tela. ex.: blue 30%
+            */
+            background-attachment: fixed;
+            /*Fixar o tamanho do fundo do site*/
+        }
+    </style> 
+</head>
+
+<body>
+    <h1>Criando degradê com CSS</h1>
+    
+</body>
+</html>

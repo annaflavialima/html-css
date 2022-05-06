@@ -1,0 +1,32 @@
+@charset 'UTF-8';
+
+h3{
+    background-color: lightgray;
+}
+
+img.static{
+    position: static;
+}
+
+img.relative{
+    width: 150px;
+    position: relative;
+    left: 100px; /*movimento o elemento 100px da margem esquerda*/
+}
+
+img.absolute{
+    width: 100px;
+    position: absolute;
+    left: 200px;
+}
+
+img.fixed{
+    width: 150px;
+    position: fixed;
+    bottom: 0px; /*posição fixada na parte inferior da tela*/
+    right: 0px; /*posição fixada no lado direito da tela*/
+}
+
+strong.red{
+    color: red;
+}

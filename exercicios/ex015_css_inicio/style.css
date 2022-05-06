@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/* 
+    esse seletor é uma regra para compatibilidade com acentuação.
+    as REGRAS devem ser definidas no início do arquivo, e começam pelo "@"
+*/
+
+body{
+    background-color: bisque;
+    font-family: Arial, Helvetica, sans-serif;    
+}
+h2{
+    background-color: black;
+    color: rgb(219, 219, 58);
+}
+p{
+    text-align: right;
+}

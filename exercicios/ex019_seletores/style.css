@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+/*
+    em CSS é "#" = em HTML é "id" (identificador)
+    em CSS é "." = em HTML é "class" (classe)
+*/
+
+body{
+    background-color: #d5fdd4;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: #097409;
+    text-decoration: underline;
+}
+
+h1#principal{
+    /*
+        pode ser com a tag ou sem:
+        h1#principal ou
+        #principal
+    */
+    background-color: red;
+    text-align: center;
+    color: white;
+    text-decoration: none; /*nesse caso é preciso definir o text-decoration desse seletor, pois foi definido annteriormente que seria underline, para tirar o sublinhado*/
+}
+
+h2{
+    color: #58a058;
+    text-align: right;
+}
+
+h2.base{
+    color: #c88dff;
+}
+
+.meio{
+    color: #ff5073;
+}
+
+.top{
+    color: rgb(177, 175, 175);
+}
+.destaque{
+    background-color: rgb(189, 122, 35);
+}

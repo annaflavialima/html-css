@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Idroid';
+    src: url('../font/idroid.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kaushan+Script&display=swap');
+
+*{
+    margin: 0;
+}
+
+footer{
+    background-color: #1a5c38;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: small;
+}
+
+h2, h3{
+    font-family: 'Idroid', Helvetica, sans-serif;
+    color: #3d5c3d;
+}
+
+h3{
+    background-image: linear-gradient(to right, #bfe5d0, white);
+}
+
+header{
+    background-image: linear-gradient(to top, #1a5c38, #3cd681);
+    font-family: 'Bebas Neue', cursive;
+}
+
+h1, header > p{
+    color: white;
+    text-align: center;
+}
+
+p{
+    text-indent: 20px;
+    padding: 10px 0 10px 0;
+}
+
+nav{
+    padding: 10px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    margin-left: 15px;
+}
+
+a:hover{
+    background-image: linear-gradient(to top, #84e1ad, lightgrey);
+    color: #1a5c38;
+    padding: 10px;
+}
+
+body{
+    background-color: #84e1ad;
+}
+
+section{
+    background-color: white;
+    width: 600px;
+    margin: 0px auto 10px auto;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.644);
+    padding: 10px;
+    text-align: justify;
+}
+
+img{
+    width: 600px;
+}
+
+img.android{
+    width: 200px;
+    display: block;
+    margin: auto;    
+}
+
+article#video{
+    background-color: #1a5c38;
+}
+
+iframe{
+    display: block;
+    margin: auto;
+    padding: 12px 20px;
+}
+
+article#extra{
+    background-color: #c5ebd6;
+    padding: 5px;
+    border-radius: 0 0 10px 10px;
+    margin: 0 5px;
+}
+
+h4{
+    background-color: #2fa866;
+    color: white;
+    margin: 15px 5px 0 5px;
+    padding: 5px;
+    border-radius: 10px 10px 0 0;
+}
+
+ul{
+    list-style: none;
+}

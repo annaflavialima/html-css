@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+</head>
+
+<body>
+    <h1>Trabalhando com Links</h1>
+    <h2>Usando links externos</h2>
+    <!--ligação com outros sites-->
+    <p>
+        Você acessar o meu <a href="https://www.linkedin.com/in/anna-flavia-de-oliveira-lima-517573110/">perfil no LinkedIn</a>
+    </p>
+    <p>
+        Para acessar meu <a href="https://www.instagram.com/annaflaviaolima/" target="_blank" rel="extenal">perfil no Instagram</a>
+        <!--
+            o parâmetro 'href="..."' indica o link que está fazendo a ligação.
+            o parâmetro 'target="_blank"' abre o link numa nova aba no navegador. 
+            o parâmetro 'rel="external"' referencia que trata-se de um link externo ao site
+        -->
+    </p>
+    <p>
+        Para informações policiais da cidade do Crato-CE, acesse <a href="https://blogdogeso.blogspot.com/" rel="nofollow">Blog do Gesso.</a>
+    </p>
+        <!--o parâmetro 'rel="noffollow"' referencia um site que deseja fazer um link no site, mas que não quer dá ênfase nos mecanismo de busca, nem credibilidade ao conteúdo.-->
+    <p>Por ser um link externo, outro site, é recomendado que abra em um nova aba do navegador.</p>
+
+    <hr>
+
+    <h2>Usando links internos</h2>
+    <!--ligação com o mesmo site-->
+    <h3>Arquivos na mesma pasta</h3>
+    <p>
+        Esta é a primeira página do meu site. Se desejar, pode acessar a <a href="pag002.html" target="_self" rel="next">segunda página</a>
+        <!--
+            o Parâmetro 'href="pag002.html"' fica dessa forma, pois os arquivos estão na mesma pasta.
+            o parâmetro 'target="_self"' abre o link na mesma aba do navegador. Nesse caso é opcional.
+            o parâmetro 'rel="next"' referencia a próxima página.
+        -->
+    </p>
+
+    <h3>Arquivos em pastas diferentes</h3>
+    <p>
+        Você também pode acessar a <a href="pags/pag003.html" rel="next">terceira página</a>
+    </p>
+    <!--
+        o Parâmetro 'href="pags/pag003.html"' fica dessa forma, pois os arquivos estão em pastas diferentes. Dessa forma coloca o nome da pasta, /, nome do arquivo HTML.
+        o parâmetro 'rel="next"' referencia a próxima página.
+    -->
+
+    <hr>
+
+    <h2>Links para Download</h2>
+    <ul>
+        <li>
+            <a href="livro/cronograma.pdf" download="cornograma.pdf" type="applcation/pdf">Capa do Cronograma em PDF</a>
+        </li>
+    </ul>
+    <!--
+        o Parâmetro 'href="livro/cronograma.pdf"' indica o nome da pasta, /, nome do arquivo e a sua extensão.
+        o parâmetro 'download="cornograma.pdf"' referencia o arquivo para download.
+        o parâmetro 'type="applcation/pdf"' identifica o tipo de arquivo que será feito o download.
+    -->
+    
+</body>
+</html>

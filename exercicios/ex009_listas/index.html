@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+
+<body>
+    <h1>Trabalhando com Listas</h1>
+    <h2>Listas Ordenas</h2>
+    <!--para criar uma Lista Ordenada usa a tag "ol". Para identificar cada item da lista usa a tag "li"-->
+    <ol>
+        <li>Acordar</li>
+        <li>Ligar para o João</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>       
+    </ol>
+
+    <!--Para mudar o numero de inicio da lista usa o parametro "start"-->
+    <ol start="8">
+        <li>Ir para a faculdade</li>
+        <li>Voltar para casa</li>
+        <li>Jantar</li>
+        <li>Dormir</li>       
+    </ol>
+
+    <!--
+        A tag "ol" possui o parametro "type" para definir o marcador da lista:
+            1 - Valor padrão. numeradas. Ex: 1, 2, 3, 4, …
+            A - alfabéticas em maiúsculas. Ex: A, B, C, D, …
+            a - alfabéticas em minúsculas. Ex: a, b, c, d, …
+            I - algarismos romanos em maiúsculas. Ex: I, II, III, IV, …
+            i - algarismos romanos em minúsculas. Ex: i, ii, iii, iv, … 
+    -->
+    <h3>Alterando os marcadores</h3>
+    <h4>tipo alfabético</h4>
+    <ol type="A">
+        <li>Acordar</li>
+        <li>Ligar para o João</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+    </ol>
+    <ol type="a">
+        <li>Acordar</li>
+        <li>Ligar para o João</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+    </ol>
+
+    <h4>tipo algarismos romanos</h4>
+    <ol type="I">
+        <li>Acordar</li>
+        <li>Ligar para o João</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+    </ol>
+    <ol type="i">
+        <li>Acordar</li>
+        <li>Ligar para o João</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+    </ol>
+
+    <hr>
+
+    <h2>Listas Não Ordenas</h2>
+    <!--para criar uma Lista Ordenada usa a tag "ul". Para identificar cada item da lista usa a tag "li"-->
+    <ul>
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Tomate</li>
+        <li>Arroz</li>       
+    </ul>
+
+     <!--
+        A tag "ul" possui o parametro "type" para definir o marcador da lista:
+            disc - Valor padrão. bolinha preenchida. 
+            circle - bolinha aberta
+            square - quadrado preenchido
+    -->
+    <h3>Alterando os marcadores</h3>
+    <h4>tipo "circle"</h4>
+    <ul type="circle">
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Tomate</li>
+        <li>Arroz</li>       
+    </ul>
+
+    <h4>tipo "square"</h4>
+    <ul type="square">
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Tomate</li>
+        <li>Arroz</li>       
+    </ul>
+
+    <hr>
+
+    <h2>Junção de listas</h2>
+    <h3>Minhas Linguagens Favoritas</h3>
+    <ol>
+        <li>Antigas</li>
+            <ol type="a">
+                <li>Clipper</li>
+                <li>Fortran</li>
+                <li>Delphi</li>
+            </ol>
+        <li>Novas</li>
+            <ol type="a" start="5"> <!--parametro "start" é numerico, para inicar na letra E, deve colocar o numero correspondente no alfabeto-->
+                <li>PHP</li>
+                <li>Python</li>
+                <li>JavaScript</li>
+            </ol>
+    </ol>
+
+    <h3>Meus Jogos favoritos</h3>
+    <ol>
+        <li>Nintendo</li>
+            <ul type="square">
+                <li>Mario Bros</li>
+                    <ul type="circle">
+                        <li>Super Mario 3</li>
+                        <li>Mario Bros World</li>
+                    </ul>
+                <li>Top Gear</li>
+            </ul>
+        <li>PlayStation 1</li>
+            <ul type="circle">
+                <li>Crash</li>
+                <li>Harry Potter</li>
+            </ul>
+        <li>PlayStation 2</li>
+            <ul type="disc">
+                <li>God of War</li>
+                <li>Need for Speed</li>
+            </ul>
+    </ol>
+
+    <hr>
+
+    <h2>Lista de definições</h2>
+    <!--
+        lista sem demarcadores
+            fica dentro da tag "dl"
+            cada item/termo fica dentro da tag "dt"
+            e a descriçao do item fica dentro da tag "dd" 
+    -->
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de Marcação utilizada para criar o conteúdo de sites.</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de Marcação para a especificação de estilos em sites.</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de Programação para criar interatividades em sites.</dd>
+    </dl>
+
+    
+</body>
+</html>

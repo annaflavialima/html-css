@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+    <style>
+        h1{
+            background-color: lightgray;
+        }
+
+        p.box1{
+            background-color: lightcoral;
+        }
+
+        a.box2{
+            background-color: lightgreen;
+        }
+
+        p.ex01{
+            background-color: aqua;
+            height: 50px;
+            width: 500px;
+        }
+
+        p.ex02{
+            border-width: 10px;
+            border-style: solid;
+            border-color: rgb(255, 246, 127);
+        }
+
+        p.ex03{
+            border: 5px solid black;
+            padding-top: 20px;
+            padding-right: 20px;
+            padding-bottom: 20px;
+            padding-left: 20px;
+        }
+
+        p.ex04{
+            border: 5px solid black;
+            margin-top: 50px;
+            margin-right: 50px;
+            margin-bottom: 50px;
+            margin-left: 50px;
+        }
+
+        p.ex05{
+            width: 200px;
+            height: 100px;
+            background-color: lightsalmon;
+            margin: auto;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Exemplo de modelos de caixa</h1>
+    <p class="box1">Os parágrafos são exemplos de caixa do tipo block-level, mas os <a class="box2" href="#">Links são exemplos de caixa do tipo inline-level.</a> Vamos ver como funciona.</p>
+    <p class="box1"> Caixas do tipo Bloch-Level ocupam a largura máxima da tela</p>
+    <a class="box2" href="#">Caixas do tipo Inline-Level ocupam a largura do conteúdo</a>
+    
+    <h2>Anatomia da caixa</h2>
+    <h3>Box-size:</h3>
+    <p>São as medidas que definem o tamanho da parte do content (conteúdo). <strong>HEIGHT=</strong> Altura e <strong>WIDTH=</strong> Largura</p>
+    <p class="ex01">Esse é um Exemplo de Height com 50px e Width com 500px</p>
+
+    <h3>Border:</h3>
+    <p>É a bordar, a linha que circunda o content (conteúdo).</p>
+    <p class="ex02">Este é um exemplo de Border</p>
+
+    <h3>Padding:</h3>
+    <p>É o preenchimento interno entre o content (conteúdo) e o border (bordar)</p>
+    <p class="ex03">Este é um exemplo de Padding</p>
+
+    <h3>Margin:</h3>
+    <p>É o preenchimento externo entre e o border (bordar) e a próxima caixa. Este é um exemplo de Margin</p>
+    <p class="ex04">Caixa 01</p>
+    <p class="ex04">Caixa 02</p>
+    <p>OBS.: Para centralizar uma caixa deve definir o Margin em Auto</p>
+    <p class="ex05">Exemplo de caixa centralizada</p>
+
+</body>
+</html>

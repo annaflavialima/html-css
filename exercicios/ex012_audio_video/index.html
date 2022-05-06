@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Áudio e vídeo</title>
+</head>
+
+<body>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Aprendendo a reproduzir áudio em HTML5</p>
+    <audio src="midia/happy-mistake.mp3" controls loop></audio>
+    <!--
+        atributo 'src="midia/happy-mistake.mp3"' indica o local e nome do arquivo.
+        atributo 'controls' mostra no navegador os controles de reprodução.
+        atributo 'autoplay' o audio deve ser reproduzido assim que possível.
+        atributo 'loop' reinicia o audio autmomaticamente 
+    -->
+  
+    <!--
+        ATENÇÃO nem todos os navegadores não tem compatibilidade com determinados formatos. Dessa forma deve usar a técnica de adicionar vários formatos, por prioridade, assim o navegador utilizado irá reproduzir o formato compatível.
+        Deve-se fazer da seguinte forma:
+    -->
+    <audio preload="metadata" controls>
+        <!--atributo 'preload="metadata"' carrega informações básicas do arquivo, deixando o site mais leve e rápido.-->       
+        <source src="midia/happy-mistake.mp3" type="audio/mpeg">
+        <source src="midia/happy-mistake.ogg" type="audio/ogg">
+        <source src="midia/happy-mistake.wav" type="audio/wav">
+         <!--
+            tag 'source:src'.
+            atributo 'src="..."'indica o local e nome do arquivo.
+            atributo 'type="..."' define o tipo de arquivo a ser reproduzido.
+        -->
+        <p>
+            Seu navegador não reproduz áudio, você pode baixá-lo <a href="midia/happy-mistake.mp3" download="happy-mistake.mp3" type="audio/mp3">clicando aqui</a>
+        </p><!--caso nenhum formato seja compatível, aparece essa mensagem.-->
+    </audio>
+
+    <hr>
+
+    <h1>Inserindo vídeos</h1>
+    <h2>adicionando vídeos hospedados localmente</h2>
+    <p>Este vídeo está hospedado no meu próprio servidor</p>
+    <video src="midia/neve-caindo.mp4" controls autoplay loop></video>
+    <!--
+        atributo 'src="midia/neve-caindo.mp4"' indica o local e nome do arquivo.
+        atributo 'controls' mostra no navegador os controles de reprodução.
+        atributo 'autoplay' o audio deve ser reproduzido assim que possível.
+        atributo 'loop' reinicia o video autmomaticamente 
+    -->
+
+    <!--
+        ATENÇÃO nem todos os navegadores não tem compatibilidade com determinados formatos. Dessa forma deve usar a técnica de adicionar vários formatos, por prioridade, assim o navegador utilizado irá reproduzir o formato compatível.
+        Deve-se fazer da seguinte forma:
+    -->
+    <video controls>
+        <!--atributo 'poster="local e nome do arquivo"' define a capa/imagem que aparece antes de dar play no vídeo-->       
+        <source src="midia/morangos.mp4" type="video/mp4">
+        <source src="midia/morangos.m4v" type="video/m4v">
+        <source src="midia/morangos.webm" type="video/webm">
+        <source src="midia/morangos.ogv" type="video/ogg">
+         <!--
+            tag 'source:src'.
+            atributo 'src="..."'indica o local e nome do arquivo.
+            atributo 'type="..."' define o tipo de arquivo a ser reproduzido.
+        -->
+        <p>
+            Seu navegador não tem compatibilidade com reprodução de vídeos
+        </p> <!--caso nenhum formato seja compatível, aparece essa mensagem.-->
+
+        <!--
+            ATENÇÃO
+            adicionar vídeos hospedados localmente usando a tag "video" consomem muito tráfego de dados, gerando elevado custo aos clientes.
+        -->
+    </video>
+
+    <hr>
+
+    <h2>adicionando vídeos de serviços de vídeos</h2>
+    <p>Aqui tem um vídeo adicionado diretamente do YouTube</p>
+    <!--
+        adicionando do youtube:
+        abre o vídeo que deseja adicionar ao site e clica em "compartilhar".
+        Clica em "incorporar" que irá aparecer o código em HTML.
+        copia e cola o código.
+    -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/dUH5RnBESgc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <!--
+        ATENÇÃO
+        adicionar vídeos hospedados em serviços de vídeos, torna o projeto mais barato, pois não consome dados do meu servidor. Irá consumir os dados do servidor do serviço de vídeos.
+        Isso também aumenta a abrangencia de busca do meu site, pois o google e o youtube são os maiores sites de busca do mundo.
+    -->
+
+    <!--
+        o ideal é o desenvolvedor ter um canal no YouTube, subir o vídeo do projeto para o seu canal, e depois adicioná-lo ao projeto do site.
+
+        outra opção é o VIMEO. tipo o YouTube, mas é permitido deixar o vídeo privado.
+    -->
+
+</body>
+</html>

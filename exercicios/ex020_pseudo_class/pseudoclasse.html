@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PseudoClass</title>
+    <style>
+        div{
+            display: inline-block; /*posicionar uma div ao lado da outra*/
+            background-color: #cccccc;
+            border: 1px solid black; /*bordar: espessura, tipo, cor*/
+            text-align: center;
+            height: 200px; /*Altura*/
+            width: 200px; /*Largura*/
+        }
+
+        /*pseudoclasse está relacionada ao estado do elemento: se está ativo ,marcado, vazio, habilitado, passar o mouse...*/
+        div:hover{
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+    
+</body>
+</html>

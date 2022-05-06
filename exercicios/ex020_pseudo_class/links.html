@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links PseudoElementos</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /*links visitados*/
+        a:visited{
+            color: blueviolet;
+        }
+
+        /*passar o mouse em cima*/
+        a:hover{
+            text-decoration: underline;
+            color: black;
+        }
+
+        /*ao permanecer clicado (ativo)*/
+        a:active{
+            color: yellow;
+        }
+
+        /*pseudoElemento mexe no econteúdo periférico do elemento*/
+        a::after{ /*after = incluir depois do elemento*/
+            content: ' [link]'; /*quero que coloque esse texto depois do link*/
+            text-decoration: none;
+            font-weight: normal;
+            color: rgb(160, 160, 160);
+        }
+
+        /*before = incluir antes do elemento*/
+        .especial::before{
+            content: '◬ ';
+        }
+        .especial::after{
+            content: ' ◬';
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li>
+            <a href="https://github.com/gustavoguanabara/html-css" target="_blank">Repositório GitHub</a>
+        </li>
+        <li>
+            <a href="https://www.youtube.com/channel/UCrWvhVmt0Qac3HgsjQK62FQ" target="_blank" class="especial">Canal do Youtube</a>
+        </li>
+        <li>
+            <a href="https://www.cursoemvideo.com/minha-conta/" target="_blank">Site Curso em Vídeo</a>
+        </li>
+    </ul>
+    
+</body>
+</html>

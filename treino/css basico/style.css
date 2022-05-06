@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    margin: auto;
+    width: 70%;
+    height: 100%;
+    background-color: rgb(217, 217, 217);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section{
+    padding: 15px 30px 30px 30px;
+}
+
+.data{
+    color: rgb(0, 162, 162);
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+
+p, h1{
+    padding: 10px;
+}

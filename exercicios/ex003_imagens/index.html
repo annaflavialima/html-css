@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Teste com Imagens</title>
+    </head>
+
+    <body>
+        <h1>Testenado carga com imagens</h1>
+        <p>
+            Para anexar uma imagem na mesma pasta: 
+            <ol>
+                <li>Coloca apenas o nome do arquivo e sua extensão.</li>
+            </ol>            
+        </p>
+        <img src="logo-html.png" alt="logo HTML5">
+        <!--
+            "img" é a tag que para adicionar imagens no documento HTML
+            atributo "src", significa source, ou seja, lugar de origem. nele coloca o endereço da imagem
+            atributo "alt", significa alternat. nele coloca um texto alternativo, caso a imagem não carregue, como também para acessibilidade em leitores de tela para deficientes visuais. 
+        -->
+        <p>
+            Para anexar uma imagem que está em uma subpasta: 
+            <ol>
+                <li>inseri "/", depois Coloca o nome da pasta</li>
+                <li>Seguida de barra "/" </li>
+                <li>Nome do arquivo e sua extensão</li>
+            </ol>        
+        </p>
+        <img src="imagens/logo-css.png" alt="logo CSS3">
+        <p>
+            Para carregar uma imagem externa, ou seja, uma imagem direto da internet: 
+            <ol>
+                <li>Pesquisa a imagem na internet</li>
+                <li>Clica com botão direito do mouse em cima da imagem </li>
+                <li>Seleciona "copiar endereço da imagem"</li>
+                <li>Cola o endereço (URL) da imagem.</li>
+            </ol>  
+            OBS.: dessa forma não é recomendado, pois caso o link ou servidor de origem mude a imagem ou deixe de fuuncionar, a imagem não será carregada e exibia no site.      
+        </p>
+        <img src="https://hermes.digitalinnovation.one/skills/36151bf7-5d45-4c7e-b22b-5461a2d5b850.png" alt="logo JavaScript">        
+    </body>
+</html>

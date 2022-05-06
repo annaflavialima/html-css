@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsivo</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+
+        main{
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            min-width: 320px; /*lagura minima que o bloco fica*/
+            max-width: 600px; /*lagura maxima que o bloco fica*/
+            margin: auto; /*centralizar o bloco*/
+        }
+
+        img{
+            width: 100%; /*imagem nao passar das laterais do bloco*/
+        }
+
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Testando Responsividade</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nobis aliquid fugiat, et reprehenderit cum commodi magnam ipsam, enim iure nulla laudantium, quos ut dolorum accusamus obcaecati ratione neque quidem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium labore non maiores, eos dicta praesentium iste vel alias magni iusto quibusdam quos exercitationem. Eius ipsa perspiciatis reiciendis vero officiis dolorem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, nobis odio quos animi, maiores nihil perspiciatis provident dolore corporis, voluptate dolorum dolorem eveniet quidem hic rerum saepe doloribus mollitia. Possimus.</p>
+        <picture>
+            <!--para mudar a imagem quando a tela fica mais estreita-->
+            <source media="(max-width: 600px)" srcset="imagens/irina-blok-pq.jpg">
+            <!--imagem que aparecer em telas maiores que 600px de largura-->
+            <img src="imagens/irina-blok.jpg" alt="irina"></picture>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nobis aliquid fugiat, et reprehenderit cum commodi magnam ipsam, enim iure nulla laudantium, quos ut dolorum accusamus obcaecati ratione neque quidem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium labore non maiores, eos dicta praesentium iste vel alias magni iusto quibusdam quos exercitationem. Eius ipsa perspiciatis reiciendis vero officiis dolorem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, nobis odio quos animi, maiores nihil perspiciatis provident dolore corporis, voluptate dolorum dolorem eveniet quidem hic rerum saepe doloribus mollitia. Possimus.</p>
+    </main>
+</body>
+</html>

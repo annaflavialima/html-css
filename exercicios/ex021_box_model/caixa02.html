@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightslategray;
+        }
+
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        section{
+            background-color: lightblue;
+            padding: 15px;
+        }
+
+        nav{
+            background-color: #ff3131;
+            padding: 5px;
+            box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.677); /*criar sombra*/
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 40px;
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px; /*arredondamento de bordas*/
+        }
+
+        article{
+            background-color: lightsalmon;
+            padding: 5px;
+        }
+
+        article > aside{
+            background-color: lightgreen;
+        }
+
+        footer{
+            background-color: black;
+            color: white; 
+            text-align: center;
+            padding: 5px;
+            margin: 0px;
+        }
+
+        footer > p{
+            margin: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Tags de agrupamento</h1>
+    <h3>montar um site usando as tags de forma semântica</h3>
+    
+    <!--CABEÇALHO-->
+    <header>
+        <h1>Meu site</h1>
+        <!--Tag para menu de Links-->
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+
+    </header>
+
+    <!--CONTEÚDO PRINCIPAL-->
+    <main>
+        <!--seções-->
+        <section id="assuntos">
+            <h2>Esporte, política e Tecnologia</h2> 
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id veritatis dolorem sunt similique recusandae nemo voluptates quis itaque. Temporibus, culpa sed. Illo sapiente distinctio totam sit nostrum voluptatem qui nulla.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos nostrum sapiente voluptatem natus beatae recusandae placeat impedit harum, autem sunt ipsum veniam. Aspernatur dolor necessitatibus reprehenderit distinctio magnam rem odio.</p>                       
+        </section>
+        <section id="noticias">
+            <!--artigo-->
+            <article>
+                <h2>Assunto do artigo...</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis placeat architecto numquam sint voluptates, iusto aliquid tempora. Animi doloremque quae dolor eos id amet explicabo blanditiis, excepturi consectetur consequuntur nihil?</p>
+                <!--conteúdo periférico relativo ao artigo-->
+                <aside>
+                    <p>Artigo escrito por....</p>
+                </aside>                
+            </article>
+
+            <article>
+                <h2>Artigo de notícia 02</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos enim in amet consequuntur animi error neque alias voluptatem hic. Quidem dolorem deleniti rem laborum earum fuga deserunt sunt expedita quis?</p>
+                <aside>
+                    <p>Artigo escrito por....</p>
+                </aside>
+            </article>
+        </section>
+
+    </main>
+
+    <!--RODAPÉ-->
+    <footer>
+        <p>Desenvolvido no curso HTML e CSS do curso em vídeo</p>
+    </footer>
+
+    
+</body>
+</html>

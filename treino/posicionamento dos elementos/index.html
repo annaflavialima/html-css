@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>posicionamento</title>
+</head>
+
+<body>
+    <h1>Posicionamentodos elementos</h1>
+
+    <section>
+        <h3>STATIC</h3>
+        <p>é o posicionamento padrão do elemento no documento HTML </p>
+        <img class="static" src="dados.png" alt="">
+    </section>
+
+    <section>
+        <h3>RELATIVE</h3>
+        <p>inicialmente não muda a posição do elemento.</p>
+        <p>é necessário usar propriedades de deslocamento <strong>(Top, Right, Bottom, Left)</strong> para movimentar o elemento.</p>
+        <img class="relative" src="et.png" alt="">
+    </section>
+
+    <section class="absolute">
+        <h3>ABSOLUTE</h3>
+        <p>inicialmente o elemento sai do fluxo normal do documento HTML.</p>
+        <p>também usa as propriedades de deslocamento <strong>(Top, Right, Bottom, Left)</strong> para movimentar o elemento.</p>
+        <p>sempre é posicionado baseado na caixa que está contido e que tenha um <strong>Position</strong> diferente de <strong>Static</strong></p>
+        <p>a caixa que contem o elemento com position absolute precisa ter um position relative - absolute - fixed para poder alinhar o elemento</p>
+        <p>Observe que o logo do instagram (com position absolute) está a flutuando no documento</p>
+        <img class="absolute" src="insta.png" alt="">
+    </section>
+
+    <br>
+    <br>
+
+    <section>
+        <h3>FIXED</h3>
+        <p>inicialmente o elemento sai do fluxo normal do documento HTML.</p>
+        <p>também usa as propriedades de deslocamento <strong>(Top, Right, Bottom, Left)</strong> para movimentar o elemento.</p>
+        <p>o elemento fica fixo em relação a tela do navegador, ou seja, não desaparece com a rolagem da tela</p>
+        <p>Observe que o logo do whatsapp (com position fixed) está fixado no lado inferior direito do documento</p>
+        <img class="fixed" src="app.png" alt="">
+    </section>
+    
+    <section>
+        <p>
+            <strong  class="red"> --------varios paragrafos inseridos para mostrar que o elemento com position fixed nao desaparece com a rolagem da tela----------</strong>
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas pariatur veritatis, laborum cumque blanditiis ducimus consequuntur officiis repudiandae dolorem esse, accusantium minus doloremque eos illo labore aliquam iure totam voluptates.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus facilis inventore enim similique temporibus ullam assumenda molestias excepturi voluptates quaerat amet sunt quos, deleniti eos placeat nemo. Nihil, perferendis tempora?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ad architecto facere eligendi tenetur molestiae dolor commodi saepe sint ipsam perferendis vero temporibus eaque asperiores, non earum minima autem voluptate.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas pariatur veritatis, laborum cumque blanditiis ducimus consequuntur officiis repudiandae dolorem esse, accusantium minus doloremque eos illo labore aliquam iure totam voluptates.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus facilis inventore enim similique temporibus ullam assumenda molestias excepturi voluptates quaerat amet sunt quos, deleniti eos placeat nemo. Nihil, perferendis tempora?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ad architecto facere eligendi tenetur molestiae dolor commodi saepe sint ipsam perferendis vero temporibus eaque asperiores, non earum minima autem voluptate.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas pariatur veritatis, laborum cumque blanditiis ducimus consequuntur officiis repudiandae dolorem esse, accusantium minus doloremque eos illo labore aliquam iure totam voluptates.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus facilis inventore enim similique temporibus ullam assumenda molestias excepturi voluptates quaerat amet sunt quos, deleniti eos placeat nemo. Nihil, perferendis tempora?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ad architecto facere eligendi tenetur molestiae dolor commodi saepe sint ipsam perferendis vero temporibus eaque asperiores, non earum minima autem voluptate.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas pariatur veritatis, laborum cumque blanditiis ducimus consequuntur officiis repudiandae dolorem esse, accusantium minus doloremque eos illo labore aliquam iure totam voluptates.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus facilis inventore enim similique temporibus ullam assumenda molestias excepturi voluptates quaerat amet sunt quos, deleniti eos placeat nemo. Nihil, perferendis tempora?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ad architecto facere eligendi tenetur molestiae dolor commodi saepe sint ipsam perferendis vero temporibus eaque asperiores, non earum minima autem voluptate.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas pariatur veritatis, laborum cumque blanditiis ducimus consequuntur officiis repudiandae dolorem esse, accusantium minus doloremque eos illo labore aliquam iure totam voluptates.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus facilis inventore enim similique temporibus ullam assumenda molestias excepturi voluptates quaerat amet sunt quos, deleniti eos placeat nemo. Nihil, perferendis tempora?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ad architecto facere eligendi tenetur molestiae dolor commodi saepe sint ipsam perferendis vero temporibus eaque asperiores, non earum minima autem voluptate.</p>
+        
+    </section>
+</body>
+</html>
