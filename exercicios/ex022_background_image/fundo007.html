@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        #container1{
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            position: relative;
+            height: 500px;
+            background-color: purple;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        #conteudo1{
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            left: 50%;
+            top: 50%; 
+            /*Nesse caso centralizou a imagem de acordo com o ponto de ancoragem padrão, ou seja, canto superior esquerdo*/
+        }
+
+        #container2{
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            position: relative;
+            height: 500px;
+            background-color: lightcoral;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        #conteudo2{
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: lightskyblue;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            /*Nesse caso, usa o 'transform' para movimentar o conteúdo e centralizar junto a imagem de fundo*/
+        }
+    </style>
+</head>
+
+<body>
+    <section id="container1">
+        <article id="conteudo1">
+
+        </article>
+    </section>
+    
+    <section id="container2">
+        <article id="conteudo2">
+
+        </article>
+    </section>
+</body>
+</html>
