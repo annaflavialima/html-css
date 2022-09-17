@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe{
+            width: 95vw;
+            border: 2px slid black;
+            height: 400px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Exibir páginas no iframe</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam mollitia itaque similique maxime perspiciatis quidem quod impedit adipisci hic nulla est excepturi, corporis veritatis reiciendis ducimus tempore! Quos officiis exercitationem et doloribus quas voluptas? Odit consequatur iste rerum sed reiciendis quae qui a animi aut. Fugit ducimus recusandae optio officiis minus quasi. Eum molestiae tenetur odit, sapiente consectetur placeat. Distinctio, asperiores blanditiis autem eveniet facere ipsam temporibus provident totam iure ipsa labore praesentium eos accusamus dicta qui? Temporibus illum officiis nesciunt excepturi. Veniam eveniet libero, quasi, incidunt voluptate quas tempore dignissimos nemo corrupti excepturi accusantium temporibus soluta quaerat, voluptas odit atque alias tenetur iure accusamus ducimus. Laudantium doloribus deleniti rem consequuntur eaque. Consectetur, excepturi sint. Et sint iure totam tenetur?</p>
+
+    <ul>
+        <!-- carregar páginas dentro do iframe. O atributo 'target' é lincado com o atributo 'name' do 'iframe'-->
+        <li><a href="pagina-extra/pag01.html" target="frame">Primeira página</a></li>
+        <li><a href="pagina-extra/pag02.html" target="frame">Segundda páina</a></li>
+        <li><a href="pagina-extra/pag03.html" target="frame">Terceira página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem reprehenderit obcaecati ad quos maiores necessitatibus recusandae voluptates et, asperiores voluptatum commodi, dolore sit cumque illum placeat est atque eum aut, eos sapiente corrupti ipsum. Omnis culpa quod quasi. Architecto eum iusto velit dicta natus doloribus, odio itaque quasi minima! Magnam, laboriosam nam voluptatem sunt obcaecati culpa hic rerum, vero dolores molestiae eligendi voluptates, praesentium natus?</p>
+    
+    <!-- 
+       - carregar páginas dentro do iframe. O atributo 'name' do 'iframe' é lincado com o atributo 'target' da tag 'a'.
+
+       - o atributo 'srcdoc' define o que aperce inicialmente dentro do iframe quando a página é carregada. Ele aceita HTML.
+     -->
+    <iframe src="" name="frame" srcdoc="<h1>Escolha uma página para ser exibida aqui.">
+        <p>Se você está vendo essa mensagem, é porque seu navegador não é ompatível com iframes.</p>
+    </iframe>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat minima doloribus labore dolores placeat eos qui nobis reiciendis, aut odit exercitationem illo corrupti quidem accusamus. Quos qui nam est laborum! Quo nesciunt sequi distinctio? Cupiditate expedita, impedit nisi totam nostrum provident similique nemo eligendi ea veniam enim omnis nesciunt! Vitae quo porro et ipsa sed voluptas quod asperiores reprehenderit aliquam doloribus totam sapiente ipsum quos iure enim sint, id nisi earum? Cum aperiam facere tempore cumque voluptatibus consectetur odit quasi.</p>
+</body>
+</html>
