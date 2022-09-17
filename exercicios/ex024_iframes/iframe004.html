@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe</title>
+</head>
+
+<body>
+    <h1>segurança em iframe</h1>
+    <h1>Página principal</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis soluta ab aut ratione ipsa minima perferendis doloremque amet qui culpa non quos, animi laudantium reprehenderit obcaecati cumque at magnam unde quam? Explicabo maxime quam iure non optio, laboriosam aut reiciendis.</p>
+
+    <!-- segurança
+            - atributo 'sandbox' bloquea a ação potencialmente maliciosas do site importado no iframe, não capturando dados
+            
+            - atributo 'referrerpolicy' é a política de referência, o conteúdo dentro do iframe não irá carregar informações do usuário
+    -->
+    <iframe src="pagina-extra/pag04.html" width="500" sandbox="sandbox" referrerpolicy="no-referrer"></iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sint at dolore hic nostrum atque amet, illum commodi quasi vero accusamus accusantium dicta quibusdam rem nesciunt animi eligendi aspernatur delectus. Nemo, eius saepe animi voluptatem qui cupiditate dolorem voluptate! Quae accusamus ratione iste quaerat, dignissimos velit sequi eaque modi soluta esse quis aspernatur obcaecati repellendus, error nisi officia, eum cumque dolorem! Laboriosam quam molestias corrupti!</p>
+    
+</body>
+</html>

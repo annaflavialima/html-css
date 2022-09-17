@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe</title>
+</head>
+
+<body>
+    <h1>Executar/ Bloquear script</h1>
+
+    <h3>Sem segurança</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, dignissimos! Dignissimos, nam, consequuntur ipsam esse omnis praesentium dolorum doloribus consectetur animi rerum dicta tempore. Ducimus rerum molestias voluptate in id, eius quibusdam assumenda dolor minima! Possimus repellat corrupti officiis eum repudiandae magni numquam, ducimus odit!</p>
+
+    <iframe src="pagina-extra/pag05.html"></iframe>
+
+    <h3>Com total segurança</h3>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat ea veritatis neque! Nulla ut pariatur quis non consectetur nobis, alias praesentium animi inventore numquam iste impedit ratione harum voluptatum molestiae? Suscipit eos, sapiente iure velit in et, aliquam incidunt quaerat sequi cupiditate eveniet. Repudiandae, pariatur.</p>
+
+    <iframe src="pagina-extra/pag05.html" sandbox="sandbox" referrerpolicy="no-referrer"></iframe>
+
+    <h3>Permitir apenas os scripts</h3>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat ea veritatis neque! Nulla ut pariatur quis non consectetur nobis, alias praesentium animi inventore numquam iste impedit ratione harum voluptatum molestiae? Suscipit eos, sapiente iure velit in et, aliquam incidunt quaerat sequi cupiditate eveniet. Repudiandae, pariatur.</p>
+
+    <iframe src="pagina-extra/pag05.html" sandbox="allow-scripts" referrerpolicy="no-referrer"></iframe>
+    
+</body>
+</html>
