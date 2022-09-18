@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+
+<body>
+    <h1>Tipos de input</h1>
+    <h3>number</h3>
+
+    <form action="cadastro.js" method="get">
+        <p>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome" placeholder="Nome completo">
+        </p>
+
+        <p>
+            <label for="imedia">Média:</label>
+            <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.5">
+            <input type="number" name="outro" id="outro" value="5">
+        </p>
+
+        <!-- 
+            - 'input' do tipo 'number' aceita apenas caracteres do tipo numérico. 
+            - atributo 'min' define o menor número aceitável.
+            - atributo 'max' define o maior número aceitável.
+            - atributo 'step' define o passo da numeração> Nesse caso é de 0.5, ou seja, 0.5 1 1.5 2 2.5... Sem esse atributo, o campo só permite números inteiros.
+            - atributo 'valeu' define um número que já aparece preenchido no campo. Ele sobrepõe o 'placeholder'
+        -->
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+
+    <br> <br>
+
+    <h3>month</h3>
+    <form action="cadastro.js" method="get">
+        <p>
+            <label for="imes">Período de férias:</label>
+            <input type="month" name="mes" id="imes">
+        </p>
+
+        <!-- 'input' do tipo 'month' define um mês e um ano -->
+    </form>
+    
+    <br>
+
+    <h3>date</h3>
+    <form action="cadastro.js" method="get">
+        <p>
+            <label for="idata">Dia da prova:</label>
+            <input type="date" name="data" id="idata">
+        </p>
+
+        <!-- 'input' do tipo 'date' define um dia, mês, ano -->
+    </form>
+
+    <br>
+
+    <h3>time</h3>
+    <form action="cadastro.js" method="get">
+        <p>
+            <label for="ihora">Hora da prova:</label>
+            <input type="time" name="data" id="ihora">
+        </p>
+
+        <!-- 'input' do tipo 'date' define um dia, mês, ano -->
+    </form>
+</body>
+</html>
