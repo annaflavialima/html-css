@@ -67,6 +67,45 @@
 
     <hr>
 
+    <h2>Agrupamento de campos</h2>
+
+    <form action="cadastro.js">
+        <fieldset>
+            <legend>Endereço</legend>
+            <p>
+                <label for="irua">Rua:</label>
+                <input type="text" name="rua" id="irua">
+            </p>
+            <p>
+                <label for="ibairro">Bairro:</label>
+                <input type="text" name="bairro" id="ibairro">
+            </p>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Transporte</legend>
+            <p>
+                <label for="car">Modelo do carro:</label>
+                <input type="text" name="car" id="icar">
+            </p>
+            <p>
+                <label for="icombs">Tipo de combustível:</label>
+                <input type="text" name="combs" id="icombs">
+            </p>
+        </fieldset>
+
+
+        <!-- 
+            - a tag 'fieldset' cria um Agrupamento de campos do formulário
+            - a tag 'legend' define a legenda do Agrupamento de campos
+        -->
+    </form>
+
+    <br>
+    <hr>
+
     <h2>Métodos</h2>
     <h3>GET</h3>
     <p>É o método padrão para envio de formulários. Os dados preenchidos no formulário ficam visíveis na URL.</p>

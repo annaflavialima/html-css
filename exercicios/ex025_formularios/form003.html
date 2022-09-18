@@ -68,7 +68,128 @@
             <input type="time" name="data" id="ihora">
         </p>
 
-        <!-- 'input' do tipo 'date' define um dia, mês, ano -->
+        <!-- 'input' do tipo 'time' define uma hora -->
+    </form>
+
+    <br>
+
+    <h3>email</h3>
+    <form action="cadastro.js" method="get">
+        <p>
+            <label for="iemail">E-mail:</label>
+            <input type="email" name="email" id="iemail">
+        </p>
+        <input type="submit" value="Enviar">
+
+        <!-- 'input' do tipo 'email' define um e-mail. Exige que o dado contenha um '@' pra validar o campo -->
+    </form>
+
+    <br>
+
+    <h3>tel</h3>
+    <form action="cadastro.js" method="get">
+        <p>
+            <label for="itel">Telefone:</label>
+            <input type="tel" name="tel" id="itel" pattern="\(\d{2}\) \d{4,5}-\d{4}" placeholder="(DD) 12345-1234">
+        </p>
+        <input type="submit" value="Enviar">
+
+        <!-- 
+            - 'input' do tipo 'tel' define um telefone
+            - atributo 'pattern' define uma expressão regular (conjunto de caracteres) para validar o preenchimento do campo. Nesse caso '!\(\d{2}\)\d{5}-\d{4}$': 
+                - '\(' e '\)': abre e fecha parênteses
+                - '\d': digitos de 0 a 9 
+                - '{nº}': quantidade de digitos suportado
+        -->
+    </form>
+
+    <br>
+
+    <h3>checkbox</h3>
+    <form action="cadastro.js">
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <div>
+                <input type="checkbox" name="efut" id="iefut">
+                <label for="iefut">Futebol</label>
+            </div>
+            <div>
+                <input type="checkbox" name="enat" id="ienat">
+                <label for="ienat">Natação</label>
+            </div>
+            <div>
+                <input type="checkbox" name="evol" id="ievol">
+                <label for="ievol">Vôlei</label>
+            </div>
+            <div>
+                <label for="iebaq">Basquete</label>
+                <input type="checkbox" name="ebaq" id="iebaq">                
+            </div>
+            <div>
+                <label for="ierub">Rugby</label>
+                <input type="checkbox" name="erub" id="ierub" checked>                
+            </div>
+            <input type="submit" value="Enviar">
+        </fieldset>
+
+        <!-- 
+            - 'input' do tipo 'checkbox' cria uma caixa de seleção e permite a seleção de mais de uma opção
+            - atributo 'checked' define que o item já inicie a página como marcado
+        -->
+    </form>
+
+    <br>
+
+    <h3>radio</h3>
+    <form action="cadastro.js">
+        <fieldset>
+            <legend>Sexo</legend>
+
+            <input type="radio" name="sexo" id="f">
+            <label for="f">Feminino</label>
+
+            <input type="radio" name="sexo" id="m">
+            <label for="m">Masculino</label>
+        </fieldset>
+
+        <!-- 'input' do tipo 'radio' cria uma caixa de seleção e para selecionar apenas uma opções, os inputs precisam ter o mesmo 'name' -->
+    </form>
+
+    <br>
+
+    <h3>color</h3>
+    <form action="cadastro.js">
+        <label for="icor">Escolha uma cor:</label>
+        <input type="color" name="cor" id="icor" value="#00ff00">
+
+        <!-- 
+            - 'input' do tipo 'color' permite definir uma cor dentro de um circulo cormático
+            - atributo 'value' permite definir a cor inicial
+        -->
+    </form>
+
+    <br>
+
+    <h3>range</h3>
+    <form action="cadastro.js">
+        <label for="isats">Nível de satisfação:</label>
+        <input type="range" name="sats" id="isats" min="1" max="5" value="2">
+
+        <!-- 
+            - 'input' do tipo 'range' cria uma barra de escolha
+            - atributos 'min' e 'max' permite definir os valores iniciais e finais da barra
+            - atributo 'value' permite definir o valor inicial
+        -->
+    </form>
+
+    <br>
+
+    <h3>file</h3>
+    <form action="cadastro.js">
+        <label for="ifoto">Foto do perfil:</label>
+        <input type="file" name="foto" id="ifoto">
+
+        <!-- 'input' do tipo 'file' permite o envio de arquivos. Esse tipo de input só funciona em formulários que usam o método POST.-->
     </form>
 </body>
 </html>
