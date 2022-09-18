@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Formulários</h1>
+    <h2>Formulário Simples</h2>
+
+    <!-- todo formulário tem que está dentro da tag 'form' -->
+
+    <form>
+        <p>
+            Nome: 
+            <input type="text" name="nome" id="nome">
+        </p>
+        <p>
+            Sobrenome: 
+            <input type="text" name="sobrenome" id="sobrenome">
+        </p>
+
+        <!-- 'input' do tipo 'text' é uma caixa de texto -->
+
+        <input type="submit" value="Enviar">
+        <!-- 'input' do tipo 'submit' é o botão de submeter/enviar os dados do formulário. No atributo 'value' informa o nome que aparece no botão -->
+
+    </form>
+    
+    <p>Nesse formulário simplificado não existe ligação entre as palavras informativas e as caixas de texto. O que torna o site fraco perante os mecanismos de busca e acessibilidade. </p>
+
+    <hr>
+
+    <h2>Formulário completo</h2>
+
+    <form action="cadastro.js" autocomplete="off">
+        <!-- 
+            - atributo 'action' indica para qual programa os dados do formulário serão enviados quando o usuário clicar no botão de submeter
+
+            - atirbuto 'autocomplete' desativa o autocompletar, sugestões de preenchimento, do navegador 
+        -->
+
+        <p>
+            <label for="nomeUsuario">Nome:</label>
+            <input type="text" name="nome" id="nomeUsuario">
+        </p>
+        
+        <p>
+            <label for="sobrenomeUsuario">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="sobrenomeUsuario">
+        </p>
+
+        <!-- a tag 'label' faz a ligação entre a palavra informativa e a caixa de texto do formulário. o atributo 'for' precisa ser o mesmo que o atributo 'id' -->
+
+        <input type="submit" value="Enviar">
+
+        <p>Nesse formulário completo existe ligação entre as palavras informativas e as caixas de texto. O que torna o site forte e útil perante os mecanismos de busca e acessibilidade.</p>
+    </form>
+
+    <hr>
+
+    <h2>Métodos</h2>
+    <h3>GET</h3>
+    <p>É o método padrão para envio de formulários. Os dados preenchidos no formulário ficam visíveis na URL.</p>
+
+    <form action="cadastro.js" method="get">
+        <p>
+            <label for="cidade">Cidade:</label>
+            <input type="text" name="cidade" id="cidade">
+        </p>
+        <p>
+            <label for="estado">Estado:</label>
+            <input type="text" name="estado" id="estado">
+        </p>
+        <input type="submit" value="Enviar">
+    </form>
+    <p>
+        Ao submeter o formulário acima, que usa o método GET, a URL ficará da seguinte forma:
+        <img src="img01.png" alt="">
+    </p>
+    <ul>
+        <li>Esse método é usado quando trata de dados não senssíveis, como nome, peso, sexo, pesquisas... </li>
+        <li>A quantidade de letras no formulário não pode passar de 3 mil letras. Pois esse método suporta o envio de até 3 mil bytes.</li>
+        <li>Também não suporta o envio de arquivos, como imagens.</li>
+    </ul>
+
+    <h3>POST</h3>
+    <p>É o método para envio de formulários que não informa os dados preenchidos no formulário na URL.</p>
+
+    <form action="cadastro.js" method="post">
+        <p>
+            <label for="cidadeUsuario">Cidade:</label>
+            <input type="text" name="cidade" id="cidadeUsuario">
+        </p>
+        <p>
+            <label for="estadoUsuario">Estado:</label>
+            <input type="text" name="estado" id="estadoUsuario">
+        </p>
+        <input type="submit" value="Enviar">
+    </form>
+    <p>
+        Ao submeter o formulário acima, que usa o método POST, a URL ficará da seguinte forma:
+        <img src="img02.png" alt="">
+    </p>
+    <ul>
+        <li>Esse método é usado quando trata de dados senssíveis, como CPF, endereço, dados do cartão, senhas... </li>
+        <li>Permite o envio de formulários com mais de 3 mil bytes</li>
+        <li>Suporta o envio de arquivos.</li>
+    </ul>
+</body>
+</html>
