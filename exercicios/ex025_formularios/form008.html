@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+
+<body>
+    <h1>Saída de dados</h1>
+
+    <h2>Exemplo 01</h2>
+    <p>Somar os valores</p>
+    <form action="cadastro.js">
+        <p>
+            <label for="in1">Número 1:</label>
+            <input type="number" name="n1" id="in1" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+        <p>
+            <label for="in2">Número 2:</label>
+            <input type="number" name="n2" id="in2" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+        <p>
+            <label for="isoma">Soma</label>
+            <output name="soma" id="isoma">0</output>
+
+            <!-- tag 'output' mostra a saída de um dado. Não envia essa saída de dado ao submeter o formulário, ou seja, apenas mmostra o resultado na tela -->
+        </p>
+
+        <input type="submit" value="Enviar">
+    </form>
+    
+    <br>
+
+    <h2>Exemplo 02</h2>
+    <p>Mostrar o valor selecionado na barra</p>
+    <form action="cadastro.js">
+        <p>
+            <label for="isats">Nível de satisfação:</label>
+            <input type="range" name="sats" id="isats" min="1" max="10" value="5" oninput="ival.innerHTML = Number(isats.value)">
+            <output id="ival">5</output>
+        </p>
+
+        <input type="submit" value="Enviar">
+
+    </form>
+
+    <br>
+
+    <h2>Exemplo 03</h2>
+    <p>Calcular idade</p>
+    <form action="cadastro.js">
+        <p>
+            <label for="iano">Ano de nascimento:</label>
+            <input type="number" name="ano" id="iano" min="1900" max="2022" oninput="calcIdade()">
+        </p>
+        <p>
+            <label for="idade">Você tem:</label>
+            <output id="idade">0</output> <span>anos</span>
+        </p>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+
+
+    <script>
+        function calcIdade() {
+            let atual = new Date().getFullYear()
+            idade.innerHTML = Number(atual) - Number(iano.value)
+        }
+    </script>
+</body>
+</html>
