@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+
+<body>
+    <h1>Elementos de formulários</h1>
+
+    <h2>select</h2>
+    <form action="cadastro.js">
+        <p>
+            <label for="iest">Estado:</label>
+            
+            <select name="estado" id="iest">
+                <option value="" selected>--- Escolha ---</option>
+                <optgroup label="Nordeste">
+                    <option value="CE">Ceará</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="PE">Pernambuco</option>
+                </optgroup>
+                <optgroup label="Suddeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+            </select>            
+        </p>
+
+        <!-- 
+            - tag 'select' cria uma caixa de lista de opções. Não permite escrever uma opção, apenas escolher uma opção da lista
+            - tag 'option' define a opção       
+                - atributo 'selected' define que a opção já é seleciona por padrão
+            - tag 'optgroup' define uma categoria (agrupamento) de opções
+                - atributo 'label' define o nome do agrupamento
+        -->
+    </form>
+
+    <br>
+
+    <h2>datalist</h2>
+    <form action="cadastro.js">
+        <p>
+            <label for="iprof">Profissão:</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option value="ADM">Administrador</option>
+                <option value="ENG">Engenheiro</option>
+                <option value="DEV">Desenvolvedor</option>
+            </datalist>
+        </p>
+
+         <!-- 
+            - tag 'datalist' uma caixa de lista de opções. Permite escrever uma opção ou escolher uma opção da lista
+                - o atributo 'id'  da 'datalist', deve ter o mesmo nome que o atributo 'list' do 'input'
+            - tag 'option' define a opção
+        -->
+    </form>
+
+    <br>
+
+    <h2>textarea</h2>
+    <form action="cadastro.js" method="post">
+        <p>
+            <label for="imsg">Mensagem:</label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+
+        <!-- 
+            - tag 'textarea' cria uma caixa de texto grande.
+                - atributo 'cols' e 'rows' definem quantas colunas e quantas linhas aparecerão na tela.
+            OBS.: quando usar 'textarea' o formulário deve uusar o método POST, para evitar as limitações que o método GET possui
+        -->
+    </form>
+    
+</body>
+</html>
