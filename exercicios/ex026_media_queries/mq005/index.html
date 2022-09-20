@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <!-- link para incorporar o icone do google (mesmo modo que incorpora do google fons) -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">    
+    <link rel="stylesheet" href="estilos/style.css">
+    
+</head>
+
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <!-- codigo para incorporar o icone no HTML -->
+        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span> 
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </ul>
+        </menu>
+    </header>
+
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla, maiores quasi commodi reprehenderit reiciendis laboriosam. Minima qui, sit exercitationem, totam perferendis provident quasi deserunt, modi non ex at ducimus accusamus. Expedita modi, doloremque consequatur reprehenderit cum delectus a consequuntur in ad accusamus praesentium esse quis omnis dolor mollitia doloribus sint, eos molestias ab. Explicabo tempora quo consectetur et hic praesentium. Pariatur eaque nisi fugiat nam placeat, officiis repellat enim. Reprehenderit.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel fugiat architecto perspiciatis? Nulla, ullam expedita vel optio nihil repudiandae officia aut, eveniet nisi, fugiat quos! Est ad voluptate tenetur aliquid eum quo assumenda ex rem alias nam saepe nostrum vitae ratione error omnis, atque recusandae nihil iusto doloribus. Necessitatibus molestias vero, debitis dolore perspiciatis quis natus nulla sed laudantium quo dignissimos minus! Modi corrupti temporibus necessitatibus facilis debitis consequuntur, culpa dolorum accusamus saepe nam dignissimos vero expedita qui recusandae ea architecto quibusdam eveniet officia nobis repellat. Excepturi quibusdam aliquam porro.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, possimus aliquam consectetur, unde eos dicta ipsam assumenda adipisci, quaerat maiores dolore eveniet temporibus deserunt est tenetur commodi reiciendis dolores ratione error? Optio autem enim eveniet, debitis vero necessitatibus, sed laboriosam molestias obcaecati esse iste excepturi ipsa. Amet excepturi consequatur distinctio voluptatibus eligendi a corrupti esse illum quod voluptas, unde doloremque quasi aliquam molestias quos adipisci praesentium rem? Tempore deserunt eligendi ipsa reprehenderit voluptatem error voluptas quibusdam harum ab, officia ipsam doloribus facilis explicabo laudantium consectetur.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos sequi mollitia alias, est maxime velit, natus harum quaerat delectus explicabo vitae architecto? Ab, ad adipisci. Illo laudantium fugit in quidem impedit! Eligendi aut pariatur distinctio voluptatibus totam magnam, at nemo maiores minus itaque tenetur nam aperiam ab consectetur quod id.</p>
+        </article>
+    </main>
+
+    <script>
+        /* função para esconder/ exibir a lista de itens do menu, quando clica no menu hamburguer */
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
